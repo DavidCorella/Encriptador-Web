@@ -19,16 +19,17 @@
 
    <main>
           <div class="BloqueEncriptado">
-               <textarea placeholder="Ingrese el texto aqui" class="Entrada" name="Entrada"></textarea>
+               <textarea placeholder="Ingrese el texto aqui" class="Entrada" name="Entrada" id="Entrada"></textarea>
                <h3 class="texto-info"> <span class="bi bi-exclamation-circle"></span> Solo letras minusculas y sin acentos</h3>
-               <button id="Botones">Encriptar</button>
-               <button id="Botones">Desencriptar</button>       
+               <button onclick="encriptar();" class="Botones" id="Encriptar">Encriptar</button>
+               <button onclick="Desencriptar();" class="Botones" id="Desencriptar">Desencriptar</button>       
           </div>
           
           <div class="BloqueDesencriptado">
                <textarea name="TextoEncriptado" id="TextoEncriptado" cols="30" rows="10" disabled></textarea>
-               <h2 class="MensajeNoEncontrado">Mensaje no fue encontrado</h2>
-               <p class="texto-Ingrese">Ingrese el texto que desees encriptar o desencriptar</p>
+               <h2 class="MensajeNoEncontrado" id="MensajeNoEncontrado">Mensaje no fue encontrado</h2>
+               <p class="texto-Ingrese" id="texto-Ingrese">Ingrese el texto que desees encriptar o desencriptar</p>
+               <button onclick="copiarContenido();" id="copiar" disabled>Copiar</button>
           </div>
           
        </main>
@@ -36,6 +37,6 @@
    <footer>
 
    </footer>
-
+   <script src="./Encriptador.js"></script>
 </body>
 </html>

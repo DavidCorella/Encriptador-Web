@@ -32,6 +32,7 @@ main{
     border: none;
     color: rgb(100, 181, 246);
     resize: none;
+    margin-left: 2%;
 }
 
 .Entrada:focus{
@@ -52,7 +53,7 @@ main{
     
 }
 
-#Botones{
+.Botones{
     width: 30%;
     height: 5%;
     border-radius: 2vw;
@@ -81,6 +82,8 @@ main{
     margin: 10% 5% 0 5%;
     text-align: center;
     resize: none;
+    font-family: "Inter";
+    font-size: 2vw;
 }
 
 .MensajeNoEncontrado{
@@ -98,6 +101,18 @@ main{
     font-size: 1.5vw;
     text-align: center;
     margin: auto;
+}
+
+#copiar{
+    width: 30%;
+    height: 5%;
+    border-radius: 2vw;
+    background-color: #00239c;
+    font-family: "Inter";
+    color: white;
+    font-size: 1.5vw;
+    margin: 35% 35% 0 35% ;
+    border: none;
 }
 
 @media screen and (min-width: 1100px) {
@@ -120,6 +135,10 @@ main{
     }
 
     .texto-info{
+        font-size: 1vw;
+    }
+
+    #TestoEncriptado{
         font-size: 1vw;
     }
 }
