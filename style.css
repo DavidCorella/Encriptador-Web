@@ -1,20 +1,129 @@
+body{
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    height: 10%;
+}
 #Logo{
-    margin: 5% 0 0 5%;
+    margin: 2% 0 0 2%;
 }
 
-.Palabra{
+main{
+    height: 95%;
+    width: 100%;
+}
+
+.BloqueEncriptado{
+    margin: auto;
+    height: 90%;
+    width: 45%;
+    display: inline-block;
+    vertical-align:top;
+}
+
+.Entrada{
     text-transform: lowercase;
-    width: 30%;
-    margin: 5% 0 0 10%;
+    width: 80%;
+    height: 90%;
     text-align: center;
-    font-size: 32px;
+    font-size: 4vw;
     font-family: "Inter";
     border: none;
     color: rgb(100, 181, 246);
+    resize: none;
 }
 
-.Palabra::placeholder{
+.Entrada:focus{
+    outline: none;
+}
+
+.Entrada::placeholder{
     color: rgb(100, 181, 246);
     border: none;
 }
+
+.texto-info{
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 2vw;
+    color: #BDBDBD;
+    margin: 2% 0 0 5%;
+    
+}
+
+#Botones{
+    width: 30%;
+    height: 5%;
+    border-radius: 2vw;
+    background-color: #00239c;
+    font-family: "Inter";
+    color: white;
+    font-size: 1.5vw;
+    margin: 5% 5% 0 5% ;
+    border: none;
+}
+
+.BloqueDesencriptado{
+    margin: auto;
+    height: 90%;
+    width: 45%;
+    display: inline-block;
+}
+
+#TextoEncriptado{
+    background-image: url("./Imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 100% 100%;
+    width: 90%;
+    height: 40% ;
+    margin: 10% 5% 0 5%;
+    text-align: center;
+    resize: none;
+}
+
+.MensajeNoEncontrado{
+    font-style: bold;
+    font-family: "Inter";
+    font-size: 2.5vw;
+    color: #9E9E9E ;
+    margin: auto;
+    text-align: center;
+}
+
+.texto-Ingrese{
+    color: #BDBDBD;
+    font-family: "Inter";
+    font-size: 1.5vw;
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (min-width: 1100px) {
+    .Entrada{
+        width: 60%;
+        height: 80%;
+        font-size: 2vw;
+    }
+
+    .texto-Ingrese{
+        font-size: 1vw;
+    }
+
+    #TextoEncriptado{
+        width: 60%;
+        margin: 5% 20% 0 20%;
+    }
+    .MensajeNoEncontrado{
+        font-size: 1.5vw;
+    }
+
+    .texto-info{
+        font-size: 1vw;
+    }
+}
+
+
+
 

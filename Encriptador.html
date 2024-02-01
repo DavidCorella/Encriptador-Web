@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="./reset.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
     <title>Encriptador Alura</title>
 </head>
 <body>
@@ -16,8 +18,20 @@
    </header> 
 
    <main>
-        <textarea placeholder="Ingrese el texto aqui" class="Palabra" name="Palabra"></textarea>
-   </main>
+          <div class="BloqueEncriptado">
+               <textarea placeholder="Ingrese el texto aqui" class="Entrada" name="Entrada"></textarea>
+               <h3 class="texto-info"> <span class="bi bi-exclamation-circle"></span> Solo letras minusculas y sin acentos</h3>
+               <button id="Botones">Encriptar</button>
+               <button id="Botones">Desencriptar</button>       
+          </div>
+          
+          <div class="BloqueDesencriptado">
+               <textarea name="TextoEncriptado" id="TextoEncriptado" cols="30" rows="10" disabled></textarea>
+               <h2 class="MensajeNoEncontrado">Mensaje no fue encontrado</h2>
+               <p class="texto-Ingrese">Ingrese el texto que desees encriptar o desencriptar</p>
+          </div>
+          
+       </main>
 
    <footer>
 
